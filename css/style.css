@@ -13,8 +13,9 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    margin-bottom: 20px;
     padding: 20px;
 }
 
@@ -68,7 +69,7 @@ h3 {
 .tag {
     background-color: #0085FF;
     color: black;
-    padding: 10px 5px;
+    padding: 5px 10px;
     font-size: 0.875em;
     font-family: monospace;
 }
