@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     background-color: black;
     color: white;
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
 .container {
@@ -75,7 +75,7 @@ h3 {
 
 footer {
   font-family: monospace;
-  font-size: 1.2em;
+  font-size: 0.875em;
     margin-top: 20px;
     position: absolute;
 
