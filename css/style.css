@@ -29,6 +29,11 @@ header h1 {
     margin-bottom: 20px;
 }
 
+.abstract-section p,
+.objectives-section p {
+    font-size: 1.5em
+}
+
 h3 {
   font-family: monospace;
   font-weight: normal;
