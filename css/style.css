@@ -78,14 +78,14 @@ h3 {
 footer {
     font-family: monospace;
     font-size: 0.875em;
-    color: #0085FF;
-    margin-top: 40px;
+    margin-top: 60px;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 footer a {
+    color: #0085FF;
     text-decoration: none;
 }
 
