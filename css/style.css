@@ -1,3 +1,4 @@
+/*
 •⁠  ⁠{
     margin: 0;
     padding: 0;
@@ -91,3 +92,98 @@ footer a:hover {
 .blue-line{
 border-color: #0085FF;
 }
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h3, .tag, footer, footer a {
+    font-family: monospace;
+    font-weight: normal;
+}
+
+h1, h3 {
+    color: #0085FF;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 0.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    font-size: 0.875em;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.authors-section,
+.tags-section,
+.abstract-section,
+.objectives-section {
+    margin-bottom: 20px;
+}
+
+.authors-section p,
+.abstract-section p,
+.objectives-section p {
+    margin-bottom: 10px;
+}
+
+.tags-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: #1e90ff;
+    color: black;
+    padding: 5px 10px;
+    font-size: 0.875em;
+}
+
+footer {
+    font-size: 1.2em;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 50px;
+}
+
+footer a {
+    color: #0085FF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.blue-line {
+    border-color: #0085FF;
+}
+
