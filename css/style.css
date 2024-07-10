@@ -36,7 +36,7 @@ h3 {
 }
 
 .title-section h2 {
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -79,7 +79,7 @@ footer {
     font-family: monospace;
     font-size: 0.875em;
     color: #0085FF;
-    margin-top: 20px;
+    margin-top: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
