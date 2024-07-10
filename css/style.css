@@ -75,13 +75,14 @@ footer {
   font-size: 1.2em;
     margin-top: 20px;
     position: absolute;
+     bottom: 50px;
 
 }
 
 footer a {
     color: #0085FF;
     text-decoration: none;
- bottom: 50px;
+
 }
 
 footer a:hover {
