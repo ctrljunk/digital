@@ -14,7 +14,7 @@ body {
 
 .container {
    position: relative;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 40px;
     padding: 20px;
@@ -78,6 +78,7 @@ h3 {
 footer {
     font-family: monospace;
     font-size: 0.875em;
+    color: #0085FF;
     margin-top: 20px;
     position: absolute;
     bottom: 0;
@@ -85,9 +86,7 @@ footer {
 }
 
 footer a {
-    color: #0085FF;
     text-decoration: none;
-
 }
 
 footer a:hover {
