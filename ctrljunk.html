@@ -59,26 +59,33 @@
     </div>
 
     <script>
-function formatBytes(bytes, decimals = 2) {
-    if (bytes === 0) return 'less than 1 KB';
-    const k = 1024;
-    const dm = decimals < 0 ? 0 : decimals;
-    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-    const i = Math.floor(Math.log(bytes) / Math.log(k));
-    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
-}
+        function formatBytes(bytes, decimals = 2) {
+            if (bytes === 0) return 'LESS THAN 1 KB';
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['BYTES', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+        }
 
-function calculatePageWeight() {
-    let totalSize = 0;
-    const performanceEntries = performance.getEntriesByType("resource");
-    performanceEntries.forEach((entry) => {
-        totalSize += entry.transferSize;
-    });
-    document.getElementById('weight-value').innerText = formatBytes(totalSize);
-}
+        function calculatePageWeight() {
+            let totalSize = 0;
 
-window.onload = calculatePageWeight;
-</script>
+            // Get the main document size
+            totalSize += document.documentElement.innerHTML.length;
+
+            // Get all resource sizes
+            const performanceEntries = performance.getEntriesByType("resource");
+            performanceEntries.forEach((entry) => {
+                totalSize += entry.transferSize;
+            });
+
+            // Update the weight value in the DOM
+            document.getElementById('weight-value').innerText = formatBytes(totalSize);
+        }
+
+        window.onload = calculatePageWeight;
+    </script>
     
 </body>
 </html>
