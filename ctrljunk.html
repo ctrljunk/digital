@@ -18,7 +18,7 @@
         <main>
             <section class="title-section">
                 <h2>Scenari sostenibili per ecosistemi digitali: una risorsa sperimentale per la riduzione dell’impatto tangibile di Internet</h2>
-                <p class="last-updated">LAST UPDATED 10.07.2024 | PAGE WEIGHT 3.26 KB</p>
+                <p class="last-updated" id="page-weight">LAST UPDATED 10.07.2024 | PAGE WEIGHT: <span id="weight-value">calculating...</span> KB</p>
             </section>
             
             <hr class="blue-line">
@@ -57,5 +57,28 @@
         </footer>
         
     </div>
+
+    <script>
+function formatBytes(bytes, decimals = 2) {
+    if (bytes === 0) return '0 KB';
+    const k = 1024;
+    const dm = decimals < 0 ? 0 : decimals;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+}
+
+function calculatePageWeight() {
+    let totalSize = 0;
+    const performanceEntries = performance.getEntriesByType("resource");
+    performanceEntries.forEach((entry) => {
+        totalSize += entry.transferSize;
+    });
+    document.getElementById('weight-value').innerText = formatBytes(totalSize);
+}
+
+window.onload = calculatePageWeight;
+</script>
+    
 </body>
 </html>
