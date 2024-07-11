@@ -42,6 +42,7 @@ h3 {
 }
 
 .title-section .last-updated {
+    font-family: monospace;
     font-size: 0.875em;
     color: #aaaaaa;
     margin-bottom: 20px;
